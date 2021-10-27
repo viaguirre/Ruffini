@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.cont_banner{
+    background-image:url("pizza-napoletana1.jpg.crdownload");
+    height: 45vh;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex: 1 1 auto;       
+}     
+
+    .cont_banner h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;     
+    color:seashell;
+    text-shadow: 
+        0 0.5px 0 #CCCCCC,
+        0 1px 0 #B5B5B5,
+        0 1.5px 0 #9B9B9B,
+        0 2px 0 #898989,
+        0 2.5px 0 #7B7B7B,
+        0 3px 0 #626262,
+        0 3.5px 0 rgba(0,0,0,.5);
+    font-weight: 300;
+    text-align:center;
+    line-height:4;  
+    }
+
+@media all and (min-width: 768px) and (max-width: 1080px){  
+    .cont_banner{
+        width: auto;
+    }
+    .cont_banner h1{
+        font-size:50px;             
+    }
+    }
+@media all and (min-width: 0px) and (max-width: 767px){   
+        .cont_banner{
+            width: auto;
+            
+        }
+        .cont_banner h1{
+            font-size: 40px;   
+        }     
+    }

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin:0px ;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    max-height: 2000px;
+    flex-flow: column nowrap;
+    display:flex;
+    width: auto;
+  
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    flex-flow: column nowrap;
+    display:flex;
+        
+     }
+        .header{
+        background:(0,0,0,.1);      
+        width: 100%;            
+        }
+           .menu{
+           background:rgba(0,0,0);
+           display:flex;
+           flex-flow: row nowrap;
+           height: 50px;
+           align-items:center;  
+           letter-spacing: 1px;           
+            }
+                .logo{                
+                flex: 1 1 auto;                            
+                }
+                    .logo img{
+                        width: 170px;
+                        
+                    }               
+                .menu nav ul {
+                    margin: 0;
+                    list-style:none;
+                    padding:0;
+                    display:flex;
+                }     
+                .menu nav li {
+                    border-left: 1px solid #fff;
+                }    
+                .menu nav li:hover {
+                    background: rgba(0,0,0,.6);                    
+                }
+                .menu nav li a{
+                    display:block;
+                    padding:15px 20px;
+                    color: #fff;
+                    text-decoration: none;
+                }       
+              
+    
+        section{                
+        display: flex;
+        height: 45vh;
+        }
+            .articulos{            
+            flex: 1 1 auto;
+            display: flex;            
+            flex-flow: row wrap;
+            }
+                .articulo{
+                background:rgba(0,0,0,.8);
+                flex: 1 1 40%;
+                }
+                .articulo h1{
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 50px;     
+                    color:seashell;                   
+                    font-weight: 100;
+                    text-align:start;
+                    line-height:1; 
+                    letter-spacing: 1px;
+                }
+                .articulo img{
+                    width: 100%;
+                    position: right;                                  
+                }
+                p{
+                    font-family: 'Lato', sans-serif;
+                    font-size: 25px;
+                    color:rgba(255, 255, 255, 0.8);
+                    text-align:start;
+                }
+            .aside{
+            background: rgba(0,0,0,.8);
+            flex:1 1 auto;    
+            height: 110vh;  
+            margin-left: 5px;      
+            }    
+            .aside img{
+                width: 100%;
+                position:relative;                
+            }
+                .novedades{
+                background: none;
+                }
+                .novedades h1{
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 50px;     
+                    color:seashell;                   
+                    font-weight: 100;
+                    text-align:center;
+                    line-height:1; 
+                    letter-spacing: 1px;
+                }
+                .novedades p{
+                text-align:start;
+                margin: 10px;
+                }
+           /* Footer*/     
+            footer{
+                background:rgba(0,0,0);
+                display: flex;      
+                justify-content:start; 
+                align-self: flex-end;  
+                position: absolute; 
+                bottom:-70vh; 
+                width: 100%;
+                height: 200px;        
+                }   
+                .footer p{
+                    margin: 15px;
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                    }  
+                    .pie{            
+                        padding: 10px;          
+                        } 
+
+        /* Menú de la pizzeria*/   
+        table {
+            border-collapse: collapse;
+            width: 100%;                
+            }              
+            th, td {
+                text-align: left;
+                padding: 15px;                
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
+                }
+            td{
+                background-color: rgba(255,255,255, .6);
+                }
+            th{
+                background-color: rgba(0,0,0,.7);
+                color: rgba(255, 255, 255);
+                }
+              
+            tr:nth-child(even) {
+                background-color: rgba(255,255,255, .3);
+                }   
+                 
+/* Body y footer recetario, menú y contacto*/
+#paginas  {
+    background:linear-gradient(
+    rgba(255, 116, 123, 0.7), 
+     rgba(209, 198, 198, 0.7)),url("mantel.jpg");                
+    background-repeat: repeat;
+    background-attachment: fixed;                                  
+    }
+
+    
+            .footerC{
+                background:rgba(0,0,0);
+                display: flex;      
+                justify-content:start; 
+                align-self: flex-end;  
+                position: absolute; 
+                bottom: 0; 
+                width: 100%;
+                height: 200px;  
+                top:93%;     
+                }   
+                .footerC p{
+                   margin: 15px;
+                   letter-spacing: 2px;
+                   font-size: 20px;
+                    }  
+                    .pie{            
+                    padding: 10px;          
+                    }  
+            /* Receta */
+            .receta-container {
+                display: flex;
+                flex-direction: row;
+                font-size: 17px;
+                text-align: start;                        
+                background:#e6e6e6;
+                border-radius:8px;                         
+                position:relative;
+                width:900px;
+                height:380px;
+                margin:auto;
+                box-sizing: border-box;
+                }
+                #recetah1{
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 60px;     
+                    color:seashell;                   
+                    font-weight: 100;
+                    text-align:center;
+                    line-height:1; 
+                    letter-spacing: 1px;
+                    }
+                      
+                .receta-izquierda{  
+                    padding: 30px;    
+                    flex: 50%;                        
+                    }      
+                    #grisines{
+                        width: 100%;
+                        position:relative;  
+                        margin-top: 30px;                        
+                        }               
+                .receta-derecha {   
+                    padding: 10px;
+                    flex: 50%;
+                    }  
+                    h2{
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 30px; 
+                    font-weight: 300;
+                    text-align: center;
+                    }
+                    ol{
+                        margin: 5px 25px;
+                        list-style-type:square;
+                        }    
+                           
+           /* Responsive*/  
+@media all and (min-width: 768px) and (max-width: 1080px){  
+    section{ 
+        flex-direction: column;
+    } 
+    .aside{
+        display:flex;
+        justify-content: center;
+    }
+    .aside img{        
+        width: 400px;
+        position:relative; 
+        }
+    .footer{
+            bottom:-150vh;
+        }  
+    .footerC{
+        bottom:-300px;
+        position: relative;
+    }
+    .receta-container {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    #recetah1 {
+        font-size: 50px;
+    }
+    #grisines{
+        width: 60%;
+        position:relative;  
+        margin-top: 5px;         
+         margin-left: 100px;                      
+    }   
+}
+
+@media all and (min-width: 0px) and (max-width: 767px){   
+    .menu{
+        flex-direction: column;
+        height: auto;  
+    } 
+    section{ 
+        flex-direction: column;        
+    } 
+    p{
+        font-size: 18px;
+        text-align:start;
+        margin-top: 0px;
+    }
+    .articulo img{
+        width: 100%;                                         
+    }
+    .aside{
+        margin-left: 0px;
+    }
+    .aside img{        
+        width: 300px;
+    }
+    .novedades p{
+            font-size: 20px;
+     }   
+     footer{
+            bottom:-125vh;
+        } 
+        
+    th, td {
+            padding: 10px;
+    } 
+    .footerC{
+        position: relative; 
+    }
+    .receta-container {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    #recetah1 {
+        font-size: 50px;
+    }
+    #grisines{
+        width: 60%;
+        position:relative;  
+        margin-top: 5px;         
+        margin-left: 90px;                      
+    } 
+    
+}
